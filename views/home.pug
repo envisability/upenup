@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  h1 About
+  p.lead.col-sm-8 UPenUP enables freelancers and agencies in managing their professional accounts from one place. With UPenUP, professionals will be able to view jobes by saved searches, get alerts for jobs that match specific criteria, and generate various reports. 
+  hr
+  .row 
+  h1 Featured Searches
+  p.lead.col-sm-8 Access your recent saved searches. The current version supports only searches from Upwork.com
+  .row
+    .col-sm-6
+      h2 IT Jobs Los Angles
+      h5 source: upwork.com | created June 17, 2018
+      p IT jobs on upwork.com. Search for all jobs that contain the phrase "Los Angeles" in their job description. 
+      p
+        a.btn.btn-default(href='/api', role='button') View details »
+    .col-sm-6
+      h2 Shopify Jobs in the US
+      h5 source: upwork.com | created: June 23, 2018
+      p Returns a list of all jobs which contain the "shopify" tag as part of their description and they are for "US Only" freelances.
+      p
+        a.btn.btn-default(href='#', role='button') View details »
+    .col-sm-6
+      h2 Angular/Node/Full Stack Jobes in the US
+      p Returns a list all jobs that contain the keywords "Angular" and/or "Node" and/or "Full Stack" in their description. Job posters requested specifically for freelancers who are located in the US
+      p
+        a.btn.btn-default(href='#', role='button') View details »
+    .col-sm-6
+      h2 iOS App Development in the US
+      p Returns a list of all jobs that contain the keywords "ios" .
+      p
+        a.btn.btn-default(href='#', role='button') View details »
+
+  .row 
+    h1 Add a Search
+    p Use this form to create and add a search to the searches database. 

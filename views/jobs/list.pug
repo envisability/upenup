@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+
+  .page-header
+    h3 Recent Jobs
+
+  .row
+    .col-xs-12
+      each job in jobs
+        .panel.panel-default
+            .panel-heading #{job.date_created} - #{job.title}
+            
+            .panel-body
+                p #{job.snippet}
+
+                p #{job.skills}
+    
